@@ -2,6 +2,7 @@
     "name" : "mogy-mysql",
     "main" : "./index.js",
     "description": "MySQL query activity for Mogy",
+    "author": "Eric Abouaf <eric.abouaf@gmail.com>",
     "version": "0.1.1",
     "dependencies": {
         "mysql": "^2.5.3"
