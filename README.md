@@ -1,6 +1,6 @@
-# MySQL query activity for Mogy
+# mogy-mysql
 
-Check out the [mogy project](https://github.com/neyric/mogy)
+MySQL query activity for [mogy](https://github.com/neyric/mogy).
 
 ## Installation
 
@@ -8,6 +8,32 @@ In your mogy project, install the dependency using npm :
 
     $ npm install mogy-mysql --save
 
-The launch the registration to Amazon Simple Workflow :
+To register the `mysql` activity to Amazon Simple Workflow :
 
     $ mogy register
+
+## Config
+
+In your mogy environment config file, under the `activities` key, add :
+
+````json
+"mysql": {
+    "host"     : "localhost",
+    "user"     : "user",
+    "password" : "****",
+    "database" : "project",
+    "port": 8888
+}
+````
+
+## Sample Decider Usage
+
+````javascript
+activity({
+    name: 'myQuery',
+    activity: 'mysql',
+    input: {
+        query: 'show tables'
+    }
+})
+````
