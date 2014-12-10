@@ -3,7 +3,7 @@
     "main" : "./index.js",
     "description": "MySQL query activity for Mogy",
     "author": "Eric Abouaf <eric.abouaf@gmail.com>",
-    "version": "0.1.2",
+    "version": "0.1.3",
     "dependencies": {
         "mysql": "^2.5.3"
     },
@@ -11,6 +11,13 @@
         "mogy-activity",
         "mysql"
     ],
+    "license": "MIT",
+
+    "repository": {
+        "type": "git",
+        "url": "http://github.com/neyric/mogy-mysql.git"
+    },
+
     "activities": {
         "mysql": {
             "defaultTaskHeartbeatTimeout": "NONE",
